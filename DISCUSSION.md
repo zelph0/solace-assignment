@@ -1,0 +1,1 @@
+I was conflicted between showing what I can accomplish with AI versus without it, but I ultimately chose to complete the assignment using AI, since that’s the workflow that feels most realistic and reflects how I work day to day.
