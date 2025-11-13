@@ -8,10 +8,18 @@ const setup = () => {
       select: () => ({
         from: () => [],
       }),
-    };
+      selectDistinct: () => ({
+        from: () => [],
+      }),
+      execute: () => Promise.resolve({ rows: [] }),
+      insert: () => ({
+        values: () => ({
+          returning: () => Promise.resolve([]),
+        }),
+      }),
+    } as any;
   }
 
-  // for query purposes
   const queryClient = postgres(process.env.DATABASE_URL);
   const db = drizzle(queryClient);
   return db;
